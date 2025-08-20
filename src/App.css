@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
 }
@@ -7,11 +5,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   text-align: center;
 }
-
 
 body {
   font-family: "Playwrite CA", cursive;
@@ -19,7 +17,10 @@ body {
   font-weight: 100;
   font-style: normal;
   background-color: #F2F0EF;
-  color:#607B9B;
+  color: #607B9B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div {
@@ -39,8 +40,12 @@ h2 {
 }
 
 .app-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .challenge-container {
@@ -55,9 +60,10 @@ p {
 img {
   width: 300px;
   height: 300px;
-  border-radius:50%;
+  border-radius: 50%;
   margin-bottom: 5vh;
   border: 2px solid #607B9B;
+  object-fit: cover;
 }
 
 button {
