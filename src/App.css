@@ -13,6 +13,7 @@ html, body {
   width: 100%;
   height: 100%;
   text-align: center;
+  overflow: hidden; /* 🚫 no scroll */
 }
 
 body {
@@ -27,46 +28,40 @@ body {
   align-items: center;
 }
 
-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 3.5rem;
-}
-
-h2 {
-  text-decoration: underline;
-}
-
 .app-container {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;  /* 🔑 space items evenly in screen */
   align-items: center;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .challenge-container {
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem; 
-  padding-bottom: 1.5vh;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem); /* 🔑 scales with screen */
+  line-height: 1.2;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  max-width: 40vmin;  /* 🔑 scales to fit smaller screens */
+  max-height: 40vmin;
   border-radius: 50%;
-  margin-bottom: 5vh;
   border: 2px solid #607B9B;
   object-fit: cover;
 }
@@ -75,5 +70,7 @@ button {
   background-color: #607B9B;
   color: #F2F0EF;
   border: none;
-  padding: 1rem 2rem;
+  padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem); /* 🔑 responsive */
+  border-radius: 8px;
+  cursor: pointer;
 }
