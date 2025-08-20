@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="app-container">
         <h1>Young's Wedding 2026</h1>
-        <img src="public\placeholder.jpg" alt="Sophia" />
+        <img src="placeholder.jpg" alt="Sophia" />
         <div className="challenge-container">
           <h2>Picture Challenge</h2>
           <p>Take a picture with all the groomsmen wearing a woman's hat</p>
