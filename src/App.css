@@ -1,0 +1,55 @@
+#root {
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: "Playwrite CA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #F2F0EF;
+  color:#607B9B;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.challenge-container {
+  gap: 0.5rem; 
+  padding-bottom: 2.5vh;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius:50%;
+  margin-bottom: 5vh;
+  border: 2px solid #607B9B;
+}
+
+button {
+  background-color: #607B9B;
+  color: #F2F0EF;
+  border: none;
+  padding: 1rem 2rem;
+}
