@@ -46,7 +46,11 @@ export default function UploadOnly() {
         </div>
         
         <div className="upload-container">
+          <label for="file-upload" class="custom-file-upload">
+            Take a photo
+          </label>
           <input
+            id="file-upload"
             type="file"
             accept="image/*"
             capture="environment"

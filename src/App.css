@@ -56,8 +56,16 @@ body {
   gap: 0.5rem;
 }
 
-input {
-  flex-direction: column;
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 h1 {
