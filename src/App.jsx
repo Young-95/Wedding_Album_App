@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { initializeApp } from "firebase/app";
 import { getStorage, ref, uploadBytes } from "firebase/storage";
 import "./App.css";
+import Challenge from "./Challenge";
 
 // 🔑 Your Firebase config
 const firebaseConfig = {
@@ -40,10 +41,7 @@ export default function UploadOnly() {
       <div className="app-container">
         <h1>Young's Wedding 2026</h1>
         <img src="placeholder.jpg" alt="Sophia" />
-        <div className="challenge-container">
-          <h2>Picture Challenge</h2>
-          <p>Take a picture with all the groomsmen wearing a woman's hat</p>
-        </div>
+        <Challenge />
         
         <div className="upload-container">
           <label class="custom-file-upload">
