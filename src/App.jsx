@@ -46,6 +46,15 @@ export default function UploadOnly() {
         </div>
         
         <div className="upload-container">
+          <label class="custom-file-upload">
+          Upload from Gallery
+          <input
+            type="file"
+            accept="image/*"
+            style={{ display: "none" }}
+            onChange={(e) => setFile(e.target.files[0])}
+          />
+          </label>
           <label for="file-upload" class="custom-file-upload">
             Take a photo
           </label>
