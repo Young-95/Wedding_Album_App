@@ -92,6 +92,12 @@ img {
   object-fit: cover;
 }
 
+.preview-image {
+  max-width: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
 button {
   background-color: #607B9B;
   color: #F2F0EF;
@@ -99,4 +105,12 @@ button {
   padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px){
+  img {
+    max-width: 25vmin;
+    max-height: 30vmin;
+  }
 }
