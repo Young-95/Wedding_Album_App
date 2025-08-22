@@ -52,7 +52,7 @@ export default function UploadOnly() {
   return (
     <div className="app-container">
       <h1>Young's Wedding 2026</h1>
-      <img src="placeholder.jpg" alt="Sophia" />
+      <img className="couple-img" src="placeholder.jpg" alt="Sophia" />
       <Challenge />
 
       <div className="upload-container">

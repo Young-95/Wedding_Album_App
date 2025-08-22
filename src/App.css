@@ -43,7 +43,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem; 
  
 }
 
@@ -65,7 +64,7 @@ input[type="file"] {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -76,15 +75,15 @@ h1 {
 
 h2 {
   text-decoration: underline;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   padding: 0 20px
 }
 
-img {
+.couple-img {
   max-width: 40vmin;
   max-height: 40vmin;
   border-radius: 50%;
@@ -93,7 +92,7 @@ img {
 }
 
 .preview-image {
-  max-width: 200px;
+  width: 100px;
   margin-top: 10px;
   border-radius: 10px;
 }
