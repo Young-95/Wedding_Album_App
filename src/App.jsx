@@ -23,6 +23,14 @@ export default function UploadOnly() {
   const eventId = "wedding2026"; // could come from URL
   const [file, setFile] = useState(null);
   const [status, setStatus] = useState("");
+  
+  const handleFileChange = (e) => {
+    const f = e.target.files[0];
+    if (f) {
+      setFile(f);
+      setStatus(`📷 File ready to upload: ${f.name}`);
+    }
+  };
 
   const uploadPhoto = async () => {
     if (!file) return;
@@ -50,7 +58,7 @@ export default function UploadOnly() {
             type="file"
             accept="image/*"
             style={{ display: "none" }}
-            onChange={(e) => setFile(e.target.files[0])}
+            onChange={handleFileChange}
           />
           </label>
           <label for="file-upload" class="custom-file-upload">
@@ -61,9 +69,11 @@ export default function UploadOnly() {
             type="file"
             accept="image/*"
             capture="environment"
-            onChange={(e) => setFile(e.target.files[0])}
+            onChange={handleFileChange}
           />
-          <button onClick={uploadPhoto} disabled={!file}>Upload</button>
+           {file && (
+            <button onClick={uploadPhoto}>Upload</button>
+          )}
           {status && <p>{status}</p>}
         </div>
       </div> 
