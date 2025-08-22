@@ -91,9 +91,9 @@ export default function UploadOnly() {
         )}
 
         {/* Upload button */}
-        <button onClick={uploadPhoto} disabled={!file}>
-          Upload
-        </button>
+        {file && (
+            <button onClick={uploadPhoto}>Upload</button>
+          )}
 
         {/* Status text (success, error, uploading) */}
         {status && !previewUrl && <p>{status}</p>}
