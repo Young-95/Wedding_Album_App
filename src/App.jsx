@@ -10,7 +10,7 @@ const firebaseConfig = {
   authDomain: "wedding-album-app-29b96.firebaseapp.com",
   databaseURL: "https://wedding-album-app-29b96-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "wedding-album-app-29b96",
-  storageBucket: "wedding-album-app-29b96.appspot.com", // ✅ corrected
+  storageBucket: "wedding-album-app-29b96.firebasestorage.app",
   messagingSenderId: "884419894650",
   appId: "1:884419894650:web:7cfeb5a6c50384de1e8ac3",
   measurementId: "G-MPMQ83CM43"
