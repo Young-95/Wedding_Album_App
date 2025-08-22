@@ -68,7 +68,7 @@ input[type="file"] {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin: 0;
 }
@@ -83,6 +83,11 @@ p {
   padding: 0 20px
 }
 
+label {
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
 .couple-img {
   max-width: 40vmin;
   max-height: 40vmin;
@@ -93,6 +98,8 @@ p {
 
 .preview-image {
   width: 100px;
+  height: 100px;
+  object-fit: cover;
   margin-top: 10px;
   border-radius: 10px;
 }
