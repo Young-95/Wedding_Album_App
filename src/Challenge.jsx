@@ -31,7 +31,7 @@ export default function Challenge() {
     return (
         <>
             <div className="challenge-container">
-            <h2>Picture Challenge</h2>
+            <h2>Photo Challenge</h2>
             <p>{randomPrompt}</p>
             </div>
         </>

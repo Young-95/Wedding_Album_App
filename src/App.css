@@ -2,6 +2,11 @@
   height: 100%;
   width: 100%;
 }
+:root {
+  --main-color: #A7C1E1;
+  --secondary-color: #F2F0EF;
+  --accent-color: #84a1ca;
+}
 
 * {
   box-sizing: border-box;
@@ -14,7 +19,7 @@ html, body {
   width: 100%;
   height: 100%;
   text-align: center;
-  overflow: hidden; /* 🚫 no scroll */
+  overflow: hidden;
 }
 
 body {
@@ -22,8 +27,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  background-color: #F2F0EF;
-  color: #607B9B;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,17 +39,11 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;  /* 🔑 space items evenly in screen */
+  justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
 }
 
-.challenge-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
-}
 
 .upload-container {
   display: flex;
@@ -84,16 +83,43 @@ p {
 }
 
 label {
-  font-size: 0.75rem;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
   cursor: pointer;
+  padding: 5px;
 }
 
 .couple-img {
-  max-width: 40vmin;
-  max-height: 40vmin;
-  border-radius: 50%;
-  border: 2px solid #607B9B;
+  max-width: 10rem;
+  max-height: 10rem;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
   object-fit: cover;
+}
+
+
+.challenge-container {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 0.5rem 1.5rem;
+  border: 2px solid var(--secondary-color);
+}
+
+.challenge-container p {
+  font-family: serif;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 10px;
 }
 
 .preview-image {
@@ -105,8 +131,8 @@ label {
 }
 
 button {
-  background-color: #607B9B;
-  color: #F2F0EF;
+  background-color: var(--secondary-color); 
+  color: var(--main-color);
   border: none;
   padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   border-radius: 8px;

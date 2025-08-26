@@ -52,20 +52,8 @@ export default function UploadOnly() {
   return (
     <div className="app-container">
       <h1>Young's Wedding 2026</h1>
-      <img className="couple-img" src="placeholder.jpg" alt="Sophia" />
       <Challenge />
-
-      <div className="upload-container">
-        <label className="custom-file-upload">
-          Upload from Gallery
-          <input
-            type="file"
-            accept="image/*"
-            style={{ display: "none" }}
-            onChange={handleFileChange}
-          />
-        </label>
-
+      <img className="couple-img" src={previewUrl || "placeholder.jpg"} alt="Sophia" />
         <label htmlFor="file-upload" className="custom-file-upload">
           Take a photo
         </label>
@@ -78,15 +66,21 @@ export default function UploadOnly() {
           onChange={handleFileChange}
         />
 
+      <div className="upload-container">
+        <label className="custom-file-upload">
+          Upload from Gallery
+          <input
+            type="file"
+            accept="image/*"
+            style={{ display: "none" }}
+            onChange={handleFileChange}
+          />
+        </label>
+
         {/* Thumbnail preview if file selected */}
         {previewUrl && (
           <div className="preview-container">
             <p>{status}</p>
-            <img
-              src={previewUrl}
-              alt="Preview"
-              className="preview-image"
-            />
           </div>
         )}
 
