@@ -3,8 +3,8 @@
   width: 100%;
 }
 :root {
-  --main-color: #A7C1E1;
-  --secondary-color: #F2F0EF;
+  --main-color: white; 
+  --secondary-color: #A7C1E1;
   --accent-color: #84a1ca;
 }
 
@@ -102,12 +102,11 @@ label {
 }
 
 
-.challenge-container {
-  
+.challenge-container { 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--secondary-color);
+  color: var(--main-color);
   background-color: var(--accent-color);
   border-radius: 10px;
   padding: 5px 10px;
