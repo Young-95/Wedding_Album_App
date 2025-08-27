@@ -3,9 +3,9 @@
   width: 100%;
 }
 :root {
-  --main-color: white; 
-  --secondary-color: #A7C1E1;
-  --accent-color: #84a1ca;
+  --main-color: #84a1ca; 
+  --secondary-color: white;
+  --accent-color: ;
 }
 
 * {
@@ -107,7 +107,7 @@ label {
   flex-direction: column;
   justify-content: center;
   color: var(--main-color);
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
   border-radius: 10px;
   padding: 5px 10px;
   margin: 0.5rem 1.5rem;
